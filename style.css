@@ -295,7 +295,7 @@ span{
 }
 .experience{
     padding: 100px 15px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .experience h2{
     margin-bottom: 5rem;
@@ -345,11 +345,11 @@ span{
 .timeline-date{
     font-size: 25px;
     font-weight: 900;
-    color: white;
+    color: var(--text-color);
     margin: 6px 0 15px;
 }
 .timeline-content{
-    background-color: var(--bg-color);
+    background-color: var(--main-color);
     border: 3px solid var(--main-color);
     padding: 30px 50px;
     border-radius: 4rem;
@@ -363,12 +363,12 @@ span{
 }
 .timeline-content h3{
     font-size: 25px;
-    color: white;
+    color: var(--header-color);
     margin: 0 0 10px;
     font-weight: 700;
 }
 .timeline-content p{
-    color: white;
+    color: var(--header-color);
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
