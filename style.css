@@ -116,7 +116,7 @@ span{
 }
 
 .home-content h1{
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 700;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
@@ -288,11 +288,61 @@ span{
 
 /* EXPERIENCE STYLING*/
 
-.heading{
-    font-size: 7rem;
+.latteheading {
+    font-size: 5rem;
     text-align: center;
     margin: 5rem 0;
 }
+.heading{
+    font-size: 9rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.latte-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.latte-text {
+  flex: 2;
+}
+
+.latte-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.latte-image img {
+  position: relative;
+  top: 5rem; /* pushes image down */
+
+  margin-top: 2rem; /* adjust as needed */
+  display: block; /* removes small inline spacing */
+  max-width: 100%;
+  height: auto;
+  border-radius: 25% / 50%;
+  /* Remove intentional top spacing */
+  margin-top: 0;
+  padding-top: 0;
+
+  /* Glow style */
+  box-shadow: 0 0 5vw var(--main-color);
+  opacity: 0.85;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.latte-img img:hover {
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color),
+              0 0 100px var(--main-color);
+  opacity: 1;
+}
+
 .experience{
     padding: 100px 15px;
     background: var(--bg-color);
@@ -369,7 +419,7 @@ span{
 }
 .timeline-content p{
     color: var(--header-color);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 22px;
 }
@@ -395,6 +445,15 @@ span{
     font-size: 2rem;
     text-align: center;
 }
+
+.subsubheading{
+    margin-left: 20px;
+    font-size: 3rem;
+    text-align: left;
+    margin-right: 20px;
+}
+
+
 .projects{
     padding: 100px 15px;
     background: var(--header_color_alternative);
@@ -402,6 +461,7 @@ span{
 .projects h2{
     margin-bottom: 3rem;
 }
+
 .project-items{
     max-width: 1200px;
     margin: auto;
