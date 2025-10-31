@@ -288,60 +288,45 @@ span{
 
 /* EXPERIENCE STYLING*/
 
-.latteheading {
-    font-size: 5rem;
-    text-align: center;
-    margin: 5rem 0;
-}
-.heading{
-    font-size: 9rem;
-    text-align: center;
-    margin: 5rem 0;
-}
-
 .latte-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 20px;
+  gap: 4rem;
+  flex-wrap: wrap; /* Ensures it stacks nicely on smaller screens */
+  margin-top: 8rem;
 }
 
 .latte-text {
   flex: 2;
+  font-size: 2rem; /* make it readable */
+  line-height: 1.7;
+  color: var(--header-color);
+}
+
+.latte-text .subsubheading {
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  color: var(--header-color);
 }
 
 .latte-image {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .latte-image img {
-  position: relative;
-  top: 5rem; /* pushes image down */
-
-  margin-top: 2rem; /* adjust as needed */
-  display: block; /* removes small inline spacing */
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 25% / 50%;
-  /* Remove intentional top spacing */
-  margin-top: 0;
-  padding-top: 0;
-
-  /* Glow style */
-  box-shadow: 0 0 5vw var(--main-color);
-  opacity: 0.85;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 25px var(--main-color);
+  margin-top: 0; /* remove the big gap */
 }
 
-.latte-img img:hover {
-  box-shadow: 0 0 25px var(--main-color),
-              0 0 50px var(--main-color),
-              0 0 100px var(--main-color);
-  opacity: 1;
-}
 
 .experience{
     padding: 100px 15px;
