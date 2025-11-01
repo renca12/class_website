@@ -216,12 +216,12 @@ socialMediaAvg.then(function(data) {
     const dataByPlatform = d3.group(data, d => d.Platform);
 
     const barGroups = svg.selectAll(".barGroup")
-        .data(Array.from(dataByPlatform)) // Convert Map to array of [Platform, rows]
+        .data(Array.from(dataByPlatform))
         .enter()
         .append("g")
-        .attr("transform", d => `translate(${x0(d[0])},0)`) // d[0] = Platform
+        .attr("transform", d => `translate(${x0(d[0])},0)`)
         .selectAll("rect")
-        .data(d => d[1]) // d[1] = array of PostType rows
+        .data(d => d[1])
         .enter()
 
     // Draw bars
@@ -240,7 +240,7 @@ socialMediaAvg.then(function(data) {
 
     types.forEach((type, i) => {
 
-    // Alread have the text information for the legend.
+    // Already have the text information for the legend.
     // Now add a small square/rect bar next to the text with different color.
         legend.append("rect")
             .attr("x", 0)
@@ -323,7 +323,7 @@ socialMediaTime.then(function(data) {
 
     // Draw the line and path. Remember to use curveNatural. 
     const line = d3.line()
-        .x(d => xScale(d.Date) + xScale.bandwidth() / 2) // center the point in the band
+        .x(d => xScale(d.Date) + xScale.bandwidth() / 2)
         .y(d => yScale(d.AvgLikes))
         .curve(d3.curveNatural);
 
