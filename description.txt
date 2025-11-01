@@ -1,0 +1,11 @@
+https://renca12.github.io/class_website/
+
+Extra styling: 
+- I included a header
+- customized background colors
+- I changed the border shape of the images
+- I included a glow when I hover over an image
+- added a timeline to the second page as my list
+- included a "typing" animation to the home page
+- included some fun...links
+- most of the buttons have a slight increase in size when you hover over them
